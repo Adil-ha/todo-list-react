@@ -16,7 +16,7 @@ const FormTask = () => {
         const nameTask = nameTaskRef.current.value
         const deadlineTask = deadlineTaskRef.current.value
 
-        // Vérifiez si les champs ne sont pas vides avant de créer une nouvelle tâche
+        
         if (nameTask.trim() === '' || deadlineTask.trim() === '') {
             alert("Veuillez remplir tous les champs.");
             return;
@@ -26,7 +26,7 @@ const FormTask = () => {
 
         setTasks((prevTasks) => [...prevTasks, newTask])
         
-        // Réinitialisez les champs de saisie après soumission
+        
         nameTaskRef.current.value = '';
         deadlineTaskRef.current.value = '';
     }

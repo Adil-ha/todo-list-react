@@ -3,6 +3,7 @@ class Task {
     this.id = new Date().getTime();
     this.name = name;
     this.deadline = deadline;
+    this.isCompleted = false;
   }
 
   // get id() {
